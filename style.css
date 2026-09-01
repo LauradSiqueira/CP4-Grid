@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#inicio {
+    background-color: black;
+}
+
+.inicio__content {
+    width: 55%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    max-width: 970px;
+    margin: 0 auto;
+    gap: 15px;
+    margin-top: 30px;
+    color: white;
+    grid-template-areas:
+        "a a a a"
+        "b c d e";
+}
+
+.banner1 {
+    grid-area: a;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.banner2 {
+    grid-area: b;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.banner3 {
+    grid-area: c;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.banner4 {
+    grid-area: d;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.banner5 {
+    grid-area: e;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: bisque;
+    border-radius: 20px;
+    width: 180px;
+    height: 50px;
+    margin-top: -200px;
+
+}
+
+#galeria {
+    background-color: beige;
+    padding: 100px 100px;
+}
+
+.galeria__content {
+    display: grid;
+    gap: 15px;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.sea1 {
+    grid-row: 1/2;
+}
+
+.sea2 {
+    grid-row: 2/3;
+}
+
+.sea3 {
+    grid-row: 1/3;
+}
+
+.sea .img {
+    border-radius: 7px;
+}
+
+#depoimentos {
+    background-color: black;
+    padding: 20px 0;
+}
+
+
+.user1 img {
+    height: 30px;
+    border-radius: 100%;
+}
+
+.user2 img {
+    height: 30px;
+    border-radius: 100%;
+}
+
+.user3 img {
+    height: 30px;
+    border-radius: 100%;
+}
+
+.user1 {
+    grid-area: a;
+}
+
+.user2 {
+    grid-area: b;
+}
+
+.user3 {
+    grid-area: c;
+}
+
+.ice__container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    justify-content: space-between;
+    grid-template-areas:
+        ". b c"
+        ". b ."
+        "a b .";
+}
+
+.ice__item h5 {
+    font-weight: 700;
+    margin: 15px 0 7px;
+    text-decoration: underline;
+}
