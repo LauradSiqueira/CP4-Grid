@@ -177,54 +177,76 @@ body {
     filter: brightness(1.05);
 }
 
-#depoimentos {
-    background-color: black;
-    padding: 20px 0;
+.depoimentos {
+    background-color: var(--preto);
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 70px 0;
 }
 
-
-.user1 img {
-    height: 30px;
-    border-radius: 100%;
+.depoimentos__title {
+    color: white;
+    font-size: 28px;
+    text-align: right;
+    margin-bottom: 40px;
 }
 
-.user2 img {
-    height: 30px;
-    border-radius: 100%;
+.depoimentos__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 60px;
+    row-gap: 30px;
+    grid-template-areas:
+        "a ."
+        ". b"
+        "c .";
 }
 
-.user3 img {
-    height: 30px;
-    border-radius: 100%;
+.card {
+    position: relative;
+    background-color: var(--off-white);
+    border-radius: 16px;
+    padding: 30px 20px 20px 30px;
+    text-align: left;
+    transition: transform 0.3s ease;
 }
 
-.user1 {
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card:nth-child(1) {
     grid-area: a;
 }
 
-.user2 {
+.card:nth-child(2) {
     grid-area: b;
 }
 
-.user3 {
+.card:nth-child(3) {
     grid-area: c;
 }
 
-.ice__container {
-    max-width: 1080px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
-    justify-content: space-between;
-    grid-template-areas:
-        ". b c"
-        ". b ."
-        "a b .";
+.card img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--cinza);
+    position: absolute;
+    top: -20px;
+    left: 25px;
 }
 
-.ice__item h5 {
-    font-weight: 700;
-    margin: 15px 0 7px;
-    text-decoration: underline;
+.card__text {
+    color: var(--preto);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.card__nome {
+    color: var(--destaque);
+    font-weight: 600;
+    display: none;
 }
