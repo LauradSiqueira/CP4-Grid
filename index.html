@@ -15,20 +15,21 @@
             <div class="logo">CHECKPOINT <span>04</span></div>
             <nav>
                 <ul>
-                    <li><a href="#incio">Início</a></li>
+                    <li><a href="#inicio">Início</a></li>
                     <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#depoimentos">Depoimentos</a></li>
                 </ul>
             </nav>
         </div>
-    </header>  
+    </header> 
 
-    <section id="inicio">
-        <div class="inicio__content">
-            <img src="./images/banner/01.jpg" class="img banner1" alt="banner">
-            <h4 class="banner2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Assumenda itaque alias, tenetur magnam rem accusamus nulla voluptas!</h4>
-            <button>Saiba Mais</button>
+    <section id="inicio" class="hero">
+            <div class="hero__content">
+                <img src="./images/banner/01.jpg" class="img hero" alt="vila grega">
+                <div class="hero__text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda itaque alias, tenetur magnam rem accusamus nulla voluptas!</p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
             <img src="./images/banner/02.jpg" class="img banner3" alt="banner">
             <img src="./images/banner/03.jpg" class="img banner4" alt="banner">
             <img src="./images/banner/04.jpg" class="img banner5" alt="banner">
@@ -51,15 +52,28 @@
 
     </section>
 
-    <section id="depoimentos">
+    <section id="depoimentos" class="depoimentos">
+         <h2 class="depoimentos__title">O que dizem nossos clientes</h2>
         <div class="depoimentos__content">
-            <img src="./images/users/01.jpg" class="img user1" alt="users">
-            <img src="./images/users/02.jpg" class="img user2" alt="users">
-            <img src="./images/users/02.jpg" class="img user3" alt="users">
+             <article class="card">
+                    <img src="./images/users/01.jpg" class="img-user1" alt="user">
+                    <blockquote class="card__nome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quibusdam.</blockquote>
+                    <p class="card__nomea">Maria Silva</p>
+            </article>
+            <article class="card">
+                    <img src="./images/users/02.jpg" class="img-user2" alt="user">
+                    <blockquote class="card__nome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quibusdam.</blockquote>
+                    <p class="card__nomea">João Pereira</p>
+                </article>
+                <article class="card">
+                    <img src="./images/users/02.jpg" class="img-user3" alt="user">
+                    <blockquote class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quibusdam.</blockquote>
+                    <p class="card__nomea">Ana Costa</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
-        </div>
-
-    </section>
 
     <footer>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quibusdam.

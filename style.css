@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --preto: #121212;
+    --off-white: #fff3ef;
+    --cinza: #b4aaa3;
+    --destaque: #e0784f;
+}
 
 * {
     margin: 0;
@@ -7,8 +14,10 @@
 }
 
 body {
-    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--preto);
 }
+
 .img {
     width: 100%;
     height: 100%;
@@ -16,8 +25,13 @@ body {
 }
 
 .menu {
-    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.274);
     padding: 20px 0;
+    z-index: 1000;
 }
 
 .menu__content {
